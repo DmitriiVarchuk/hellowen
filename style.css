@@ -1,0 +1,198 @@
+.menu{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li{
+    display: inline;
+    margin: 0px 20px;
+}
+
+.menu a{
+    color: azure;
+    margin: 0px 20px;
+}
+
+.menu a:hover{
+    color: orange;
+}
+
+.osnova{
+    background-color: black;
+    margin: -8px;
+}
+.lipy4ka{
+    position: sticky;
+    top: 40px;
+    background-color: rgb(19, 18, 18);
+    padding: 10px;
+    font-size: 24px;
+    color: orangered;
+}
+
+.section{
+    padding: 40px 20px;
+    margin: 20px 0px;
+    background-color: rgb(22, 22, 22);
+    color: gold;
+    border-left: 5px solid orangered;
+
+}
+.pumpkinosnova{
+    position: relative;
+    margin: 50px 0;
+    height: 200px;
+    text-align: center;
+}
+.pumpkin{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150px;
+    transition: transform 1s;
+
+}
+
+.pumpkin:hover{
+    transform: scale(1.6);
+}
+
+.pumpkin-text{
+    position: absolute;
+    color: coral;
+    top: 200px;
+    left: 48%;
+}
+
+.sectiontwo{
+    padding: 40px 20px;
+    margin: 20px 0px;
+    background-color: rgb(22, 22, 22);;
+    color: rgb(91, 8, 185);
+    border-left: 5px solid orangered;
+}
+.zelka{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150px;
+    transition: transform 1s;
+}
+
+.zelka:hover{
+    transform: scale(0.7);
+}
+
+.zelka-text{
+    position: absolute;
+    color: rgb(106, 29, 206);
+    top: 200px;
+    left: 45%;
+}
+
+.sectionfour{
+    padding: 40px 20px;
+    margin: 20px 0px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+    border-left: 5px solid orangered;
+}
+
+.knopka-ghost{
+    top: 30%;
+    display: block;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: relative;
+    margin: 20px auto;
+
+}
+
+.knopka-ghost:hover,
+.knopka-ghost:focus{
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+}
+
+.ghost{
+    position: fixed;
+    bottom: 100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 0.3s;
+}
+
+@keyframes ghostfly{
+    0% {
+        transform: translate(0,0) rotate(0deg);
+        opacity: 1;
+}
+30% {
+    transform: translate(25vw,-25vh) rotate(25deg);
+    opacity: 1;
+}
+70% {
+    transform: translate(75vw,-50vh) rotate(45deg);
+    opacity: 1;
+}
+100% {
+    transform: translate(100vw,-100vh) rotate(90deg);
+    opacity: 1;
+}
+
+}
+
+.knopka-ghost:focus + .ghost {
+    animation: ghostfly 8s ease-in-out forwards;
+    opacity: 1;
+}
+
+.sectionfive{
+    padding: 40px 20px;
+    margin: 20px 0px;
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+    border-left: 5px solid orangered;
+    text-align: center;
+}
+
+.tet{
+    color:  orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tet2{
+    color: rgb(255, 251, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+.blokk{
+    margin: 20px;
+    border: 2px, solid, #ff5400;
+}
+
+.blokk2{
+    color:  orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: grey;
+    width: 240px;
+    margin-left: 43%;
+}
